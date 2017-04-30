@@ -1,0 +1,27 @@
+{
+  "name": "csf-iterator",
+  "version": "1.0.0",
+  "description": "Common Shreadsheet Format iterator. Working with xlsx and harb packages",
+  "keywords": [
+    "iterator",
+    "xlsx",
+    "harb",
+    "common-spreadsheet-format",
+    "csf",
+    "spreadsheet"
+  ],
+  "license": "MIT",
+  "author": "Eugene Nikitin",
+  "homepage": "http://github.com/eunikitin/csf-iterator.git",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/eunikitin/csf-iterator.git"
+  },
+  "bugs": {
+    "mail": "eu.nikitin@gmail.com",
+    "url": "http://github.com/eunikitin/csf-iterator/issues"
+  },
+  "main": "lib/iterator.js",
+  "dependencies": {},
+  "devDependencies": {}
+}

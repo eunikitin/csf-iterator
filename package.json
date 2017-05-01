@@ -22,6 +22,9 @@
     "url": "http://github.com/eunikitin/csf-iterator/issues"
   },
   "main": "lib/iterator.js",
+  "scripts": {
+    "dev": "node -r babel-register ./node_modules/webpack/bin/webpack --config webpack.config.development.js",
+  },
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.24.1",

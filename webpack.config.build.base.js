@@ -1,24 +1,25 @@
 import path         from 'path';
 import merge        from 'webpack-merge';
 
+import packageJson  from './package.json'
+
 import baseConfig   from './webpack.config.base';
 import resolveRules from './builder/resolve';
-import es6Loader    from './builder/loaders/es6';
+import babelLoader  from './builder/loaders/babel';
 
 
 export default merge(
     baseConfig,
     {
-        entry: './src/iterator.js',
+        entry: './src/index.js',
 
         output: {
             path: path.resolve(__dirname, "lib"),
-            filename: "iterator.js",
-            library: "csf-iterator",
+            library: packageJson.name,
             libraryTarget: 'umd',
             umdNamedDefine: true
-        }
+        },
     },
     resolveRules,
-    es6Loader
+    babelLoader
 );

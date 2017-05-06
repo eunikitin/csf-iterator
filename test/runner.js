@@ -1,5 +1,5 @@
 import fsFileTree from 'fs-file-tree';
-import fs from 'fs';
+import fs         from 'fs';
 
 
 const testFolder   = 'test/specs';

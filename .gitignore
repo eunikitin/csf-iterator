@@ -1,4 +1,21 @@
-node_modules
+# IDE specific
 .idea
+
+# Logs
+npm-debug.log*
+
+# Dependencies
+node_modules
+
+# Coverage
+coverage
+
+# Cache
+.nyc_output
+yarn.lock
 .tmp
+
+# Release
 lib
+
+

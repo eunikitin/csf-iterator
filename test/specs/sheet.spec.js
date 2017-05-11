@@ -7,7 +7,7 @@ import sheet1x1 from 'Test/fixtures/sheet-1x1';
 
 describe('Sheet', () => {
   let sheet;
-  
+
   it('should have data property', () => {
     sheet = new Sheet(sheet1x1);
     expect(sheet).to.have.property('data');

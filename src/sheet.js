@@ -5,4 +5,8 @@ export default class Sheet {
     this.data = data;
     this.name = name;
   }
+
+  isEmpty() {
+    return !this.data['!ref'];
+  }
 }

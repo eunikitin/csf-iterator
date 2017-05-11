@@ -32,4 +32,16 @@ describe('Sheet', () => {
   it('should throw an Error if data property was not given to constructor', () => {
     expect(() => new Sheet()).to.throw(Error);
   });
+
+  describe('isEmpty', () => {
+    it('should return true if !ref is not defined', () => {
+      sheet = new Sheet({});
+      expect(sheet.isEmpty()).to.equal(true);
+    });
+
+    it('should return false if !ref is defined', () => {
+      sheet = new Sheet(sheet1x1);
+      expect(sheet.isEmpty()).to.equal(false);
+    });
+  });
 });

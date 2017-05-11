@@ -15,6 +15,14 @@ export default merge(
             devtoolFallbackModuleFilenameTemplate: '[absolute-resource-path]?[hash]'
         },
 
+        resolve: {
+            alias: {
+                Test: path.resolve(process.cwd() + '/test'),
+                Fixtures: path.resolve(process.cwd() + '/test/fixtures'),
+                Specs: path.resolve(process.cwd() + '/test/specs')
+            }
+        },
+
         module: {
             rules: [
                 {

@@ -23,6 +23,12 @@ describe('Sheet', () => {
     expect(sheet.data).to.equal(sheet1x1);
   });
 
+  it('should set name property on initialization', () => {
+    const name = 'defaultName';
+    sheet = new Sheet(sheet1x1, name);
+    expect(sheet.name).to.equal(name);
+  });
+
   it('should throw an Error if data property was not given to constructor', () => {
     expect(() => new Sheet()).to.throw(Error);
   });

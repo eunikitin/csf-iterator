@@ -1,5 +1,7 @@
 import utils from 'csf-utils';
 
+import Iterator from 'Src/iterator';
+
 
 export default class Sheet {
   constructor(data, name = null) {
@@ -37,5 +39,10 @@ export default class Sheet {
 
   isEmpty() {
     return !this.data['!ref'];
+  }
+
+  getIterator() {
+    if (!this.isEmpty()) return new Iterator(this);
+    throw new Error('Sheet is empty');
   }
 }

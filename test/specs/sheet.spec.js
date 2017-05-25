@@ -1,6 +1,7 @@
 import { expect } from 'chai';
 
 import Sheet from 'Src/sheet';
+import Iterator from 'Src/iterator';
 
 import sheet1x1 from '../fixtures/sheet-1x1';
 import sheet1x1Props from '../fixtures/sheet-1x1-props';
@@ -13,6 +14,7 @@ import sheet1x1OffsetProps from '../fixtures/sheet-1x1-offest-props';
 
 import sheet2x2Offset from '../fixtures/sheet-2x2-offest';
 import sheet2x2OffsetProps from '../fixtures/sheet-2x2-offest-props';
+
 
 describe('Sheet', () => {
   let sheet;
@@ -181,6 +183,18 @@ describe('Sheet', () => {
         sheet = new Sheet(sheet2x2Offset);
         expect(sheet.lastRow).to.equal(sheet2x2OffsetProps.last.row);
       });
+    });
+  });
+
+  describe('getIterator', () => {
+    it('should return an iterator for the sheet object', () => {
+      sheet = new Sheet(sheet2x2Offset);
+      expect(sheet.getIterator()).to.be.an.instanceof(Iterator);
+    });
+
+    it('should throw an error if sheet is empty', () => {
+      sheet = new Sheet({});
+      expect(() => sheet.getIterator()).to.throw(Error);
     });
   });
 });

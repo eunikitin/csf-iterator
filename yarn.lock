@@ -1211,6 +1211,13 @@ crypto-browserify@^3.11.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
 
+csf-utils@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/csf-utils/-/csf-utils-1.0.0.tgz#d8c82ac0aacf36f67878f8e27c2818a3bdf9050d"
+  dependencies:
+    excel-cell-parser "^1.0.1"
+    excel-column-name "^1.0.0"
+
 d@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/d/-/d-1.0.0.tgz#754bb5bfe55451da69a58b94d45f4c5b0462d58f"
@@ -1641,6 +1648,16 @@ evp_bytestokey@^1.0.0:
   resolved "https://registry.yarnpkg.com/evp_bytestokey/-/evp_bytestokey-1.0.0.tgz#497b66ad9fef65cd7c08a6180824ba1476b66e53"
   dependencies:
     create-hash "^1.1.1"
+
+excel-cell-parser@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/excel-cell-parser/-/excel-cell-parser-1.0.1.tgz#456b4c264e37c775d0622d85a561e77328bff497"
+  dependencies:
+    excel-column-name "^1.0.0"
+
+excel-column-name@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/excel-column-name/-/excel-column-name-1.0.0.tgz#49a8fa764a48cb8dce8644bbdd2a0f19821a1e8b"
 
 exit-hook@^1.0.0:
   version "1.1.1"

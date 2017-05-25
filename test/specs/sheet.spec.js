@@ -9,11 +9,11 @@ import sheet1x1Props from '../fixtures/sheet-1x1-props';
 import sheet2x2 from '../fixtures/sheet-2x2';
 import sheet2x2Props from '../fixtures/sheet-2x2-props';
 
-import sheet1x1Offset from '../fixtures/sheet-1x1-offest';
-import sheet1x1OffsetProps from '../fixtures/sheet-1x1-offest-props';
+import sheet1x1Offset from '../fixtures/sheet-1x1-offset';
+import sheet1x1OffsetProps from '../fixtures/sheet-1x1-offset-props';
 
-import sheet2x2Offset from '../fixtures/sheet-2x2-offest';
-import sheet2x2OffsetProps from '../fixtures/sheet-2x2-offest-props';
+import sheet2x2Offset from '../fixtures/sheet-2x2-offset';
+import sheet2x2OffsetProps from '../fixtures/sheet-2x2-offset-props';
 
 
 describe('Sheet', () => {

@@ -2,17 +2,7 @@ import { expect } from 'chai';
 
 import Iterator from 'Src/iterator';
 
-import sheet1x1 from '../fixtures/1x1/data';
 import sheet1x1Object from '../fixtures/1x1/sheet';
-
-import sheet2x2 from '../fixtures/2x2/data';
-import sheet2x2Object from '../fixtures/2x2/sheet';
-
-import sheet1x1Offset from '../fixtures/1x1-offset/data';
-import sheet1x1OffsetObject from '../fixtures/1x1-offset/sheet';
-
-import sheet2x2Offset from '../fixtures/2x2-offset/data';
-import sheet2x2OffsetObject from '../fixtures/2x2-offset/sheet';
 
 
 describe('Iterator', () => {

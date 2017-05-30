@@ -8,5 +8,5 @@ export default {
   firstColumn: 2,
   firstRow: 2,
   lastColumn: 2,
-  lastRow: 2
+  lastRow: 2,
 };

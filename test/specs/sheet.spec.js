@@ -170,8 +170,8 @@ describe('Sheet', () => {
       });
 
       it('should set first row index', () => {
-        sheet = new Sheet(sheet1x1);
-        expect(sheet.firstRow).to.equal(sheet1x1Object.firstRow);
+        sheet = new Sheet(sheet2x2Offset);
+        expect(sheet.firstRow).to.equal(sheet2x2OffsetObject.firstRow);
       });
 
       it('should set last column index', () => {

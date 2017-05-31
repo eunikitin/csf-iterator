@@ -15,8 +15,8 @@ import sheet1x1OffsetObject from '../fixtures/1x1-offset/sheet';
 import sheet2x2Offset from '../fixtures/2x2-offset/data';
 import sheet2x2OffsetObject from '../fixtures/2x2-offset/sheet';
 
-import sheet5x2Offset from '../fixtures/5x2/data';
-import sheet5x2OffsetObject from '../fixtures/5x2/sheet';
+import sheet5x2 from '../fixtures/5x2/data';
+import sheet5x2Object from '../fixtures/5x2/sheet';
 
 
 describe('Sheet', () => {
@@ -190,33 +190,33 @@ describe('Sheet', () => {
 
     describe('5x2', () => {
       it('should calculate and set width property', () => {
-        sheet = new Sheet(sheet5x2Offset);
-        expect(sheet.width).to.equal(sheet5x2OffsetObject.width);
+        sheet = new Sheet(sheet5x2);
+        expect(sheet.width).to.equal(sheet5x2Object.width);
       });
 
       it('should calculate and set height property', () => {
-        sheet = new Sheet(sheet5x2Offset);
-        expect(sheet.height).to.equal(sheet5x2OffsetObject.height);
+        sheet = new Sheet(sheet5x2);
+        expect(sheet.height).to.equal(sheet5x2Object.height);
       });
 
       it('should set first column index', () => {
-        sheet = new Sheet(sheet5x2Offset);
-        expect(sheet.firstColumn).to.equal(sheet5x2OffsetObject.firstColumn);
+        sheet = new Sheet(sheet5x2);
+        expect(sheet.firstColumn).to.equal(sheet5x2Object.firstColumn);
       });
 
       it('should set first row index', () => {
-        sheet = new Sheet(sheet5x2Offset);
-        expect(sheet.firstRow).to.equal(sheet5x2OffsetObject.firstRow);
+        sheet = new Sheet(sheet5x2);
+        expect(sheet.firstRow).to.equal(sheet5x2Object.firstRow);
       });
 
       it('should set last column index', () => {
-        sheet = new Sheet(sheet5x2Offset);
-        expect(sheet.lastColumn).to.equal(sheet5x2OffsetObject.lastColumn);
+        sheet = new Sheet(sheet5x2);
+        expect(sheet.lastColumn).to.equal(sheet5x2Object.lastColumn);
       });
 
       it('should set last row index', () => {
-        sheet = new Sheet(sheet5x2Offset);
-        expect(sheet.lastRow).to.equal(sheet5x2OffsetObject.lastRow);
+        sheet = new Sheet(sheet5x2);
+        expect(sheet.lastRow).to.equal(sheet5x2Object.lastRow);
       });
     });
   });

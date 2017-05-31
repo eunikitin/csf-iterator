@@ -1,5 +1,5 @@
 import data from './data';
 
-export default [
-  [data.B2],
-];
+export default {
+  2: [data.B2],
+};

@@ -1211,10 +1211,17 @@ crypto-browserify@^3.11.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
 
-csf-utils@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/csf-utils/-/csf-utils-1.0.0.tgz#d8c82ac0aacf36f67878f8e27c2818a3bdf9050d"
+csf-convert@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/csf-convert/-/csf-convert-1.0.1.tgz#cebc2b71850e624240f37cd08cadbd557b971c1f"
   dependencies:
+    excel-cell-parser "^1.0.1"
+
+csf-utils@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/csf-utils/-/csf-utils-1.1.0.tgz#cec55153a4382b56889579d4e5b486df57016679"
+  dependencies:
+    csf-convert "^1.0.1"
     excel-cell-parser "^1.0.1"
     excel-column-name "^1.0.0"
 

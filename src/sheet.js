@@ -7,6 +7,7 @@ export default class Sheet {
   constructor(data, name = null) {
     if (!data) throw Error('data argument is required');
     this.data = data;
+    this.aoa = utils.convert.sheetToAoa(this.data);
     this.name = name;
 
     this.width = null;

@@ -32,14 +32,6 @@ describe('Iterator', () => {
     expect(iterator.position).to.equal(sheet1x1Object.firstRow);
   });
 
-  it('should set sheetAoa as array of arrays of sheet data', () => {
-    iterator = new Iterator(sheet5x2Object);
-    expect(iterator.sheetAoa).to.deep.equal([
-      sheet5x2DataAoa[1],
-      sheet5x2DataAoa[2],
-    ]);
-  });
-
   describe('selectColumns', () => {
     it('should return unique and sorted sequence of numbers', () => {
       expect(Iterator.selectColumns([1, 5, 2, 2, 6])).to.deep.equal([1, 2, 5, 6]);

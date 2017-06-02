@@ -17,6 +17,7 @@ import sheet2x2OffsetObject from '../fixtures/2x2-offset/sheet';
 
 import sheet5x2 from '../fixtures/5x2/data';
 import sheet5x2Object from '../fixtures/5x2/sheet';
+import sheet5x2DataAoa from '../fixtures/5x2/data-aoa';
 
 
 describe('Sheet', () => {
@@ -41,6 +42,14 @@ describe('Sheet', () => {
     const name = 'defaultName';
     sheet = new Sheet(sheet1x1, name);
     expect(sheet.name).to.equal(name);
+  });
+
+  it('should set aoa as array of arrays of sheet data', () => {
+    sheet = new Sheet(sheet5x2);
+    expect(sheet.aoa).to.deep.equal([
+      sheet5x2DataAoa[1],
+      sheet5x2DataAoa[2],
+    ]);
   });
 
   it('should throw an Error if data property was not given to constructor', () => {

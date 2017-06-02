@@ -1,5 +1,5 @@
 import data from './data';
-
+import aoa from './data-aoa';
 
 export default {
   data,
@@ -9,4 +9,8 @@ export default {
   firstRow: 3,
   lastColumn: 4,
   lastRow: 4,
+  aoa: [
+    aoa[3],
+    aoa[4],
+  ],
 };

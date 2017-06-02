@@ -4,6 +4,7 @@ import utils from 'csf-utils';
 export default class Iterator {
   constructor(sheet) {
     this.sheet = sheet;
+    this.sheetAoa = utils.convert.sheetToAoa(sheet.data);
     this.position = sheet.firstRow;
   }
 

@@ -28,7 +28,7 @@ export default class Iterator {
     const record = [];
 
     columnList.forEach((column) => {
-      record.push(this.sheet.data[utils.columnName.intToExcelCol(column) + row]);
+      record.push(this.sheet.aoa[self.sheet.lastRow - row][self.sheet.lastColumn - column]);
     });
 
     if (move) this.position += 1;

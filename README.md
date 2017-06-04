@@ -4,12 +4,4 @@
 [![dependencies Status](https://david-dm.org/eunikitin/csf-iterator/status.svg)](https://david-dm.org/eunikitin/csf-iterator)
 [![devDependencies Status](https://david-dm.org/eunikitin/csf-iterator/dev-status.svg)](https://david-dm.org/eunikitin/csf-iterator?type=dev)
 
-## Installation
-
-To install the latest version available on NPM:
-	
-    npm install csf-iterator
-
-## Usage
-
-Implement later
+**Implement later**

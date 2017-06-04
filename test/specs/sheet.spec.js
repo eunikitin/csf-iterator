@@ -138,6 +138,43 @@ describe('Sheet', () => {
       });
     });
 
+    describe('5x2', () => {
+      beforeEach(() => {
+        sheet = new Sheet(sheet5x2);
+      });
+
+      it('should calculate and set width property', () => {
+        expect(sheet.width).to.equal(sheet5x2Object.width);
+      });
+
+      it('should calculate and set height property', () => {
+        expect(sheet.height).to.equal(sheet5x2Object.height);
+      });
+
+      it('should set first column index', () => {
+        expect(sheet.firstColumn).to.equal(sheet5x2Object.firstColumn);
+      });
+
+      it('should set first row index', () => {
+        expect(sheet.firstRow).to.equal(sheet5x2Object.firstRow);
+      });
+
+      it('should set last column index', () => {
+        expect(sheet.lastColumn).to.equal(sheet5x2Object.lastColumn);
+      });
+
+      it('should set last row index', () => {
+        expect(sheet.lastRow).to.equal(sheet5x2Object.lastRow);
+      });
+
+      it('should set aoa as array of arrays of sheet data', () => {
+        expect(sheet.aoa).to.deep.equal([
+          sheet5x2DataAoa[1],
+          sheet5x2DataAoa[2],
+        ]);
+      });
+    });
+
     describe('1x1 with offset', () => {
       beforeEach(() => {
         sheet = new Sheet(sheet1x1Offset);
@@ -213,43 +250,6 @@ describe('Sheet', () => {
         aoa[3][2] = sheet2x2OffsetDataAoa[4][0];
         aoa[3][3] = sheet2x2OffsetDataAoa[4][1];
         expect(sheet.aoa).to.deep.equal(aoa);
-      });
-    });
-
-    describe('5x2', () => {
-      beforeEach(() => {
-        sheet = new Sheet(sheet5x2);
-      });
-
-      it('should calculate and set width property', () => {
-        expect(sheet.width).to.equal(sheet5x2Object.width);
-      });
-
-      it('should calculate and set height property', () => {
-        expect(sheet.height).to.equal(sheet5x2Object.height);
-      });
-
-      it('should set first column index', () => {
-        expect(sheet.firstColumn).to.equal(sheet5x2Object.firstColumn);
-      });
-
-      it('should set first row index', () => {
-        expect(sheet.firstRow).to.equal(sheet5x2Object.firstRow);
-      });
-
-      it('should set last column index', () => {
-        expect(sheet.lastColumn).to.equal(sheet5x2Object.lastColumn);
-      });
-
-      it('should set last row index', () => {
-        expect(sheet.lastRow).to.equal(sheet5x2Object.lastRow);
-      });
-
-      it('should set aoa as array of arrays of sheet data', () => {
-        expect(sheet.aoa).to.deep.equal([
-          sheet5x2DataAoa[1],
-          sheet5x2DataAoa[2],
-        ]);
       });
     });
   });

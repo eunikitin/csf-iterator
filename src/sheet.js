@@ -7,7 +7,7 @@ export default class Sheet {
   constructor(data, name = null) {
     if (!data) throw Error('data argument is required');
     this.data = data;
-    this.aoa = utils.convert.sheetToAoa(this.data);
+    this.aoa = null;
     this.name = name;
 
     this.width = null;
@@ -23,6 +23,8 @@ export default class Sheet {
   calculateSheetProperties() {
     if (!this.isEmpty()) {
       const split = this.data['!ref'].split(':');
+
+      this.aoa = utils.convert.sheetToAoa(this.data);
 
       const firstCell = utils.parseCell(split[0]);
       const lastCell = split[1] ? utils.parseCell(split[1]) : firstCell;

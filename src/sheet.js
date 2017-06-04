@@ -25,7 +25,6 @@ export default class Sheet {
       const split = this.data['!ref'].split(':');
 
       this.aoa = utils.convert.sheetToAoa(this.data);
-
       const firstCell = utils.parseCell(split[0]);
       const lastCell = split[1] ? utils.parseCell(split[1]) : firstCell;
 

@@ -1,5 +1,7 @@
 import data from './data';
 
-export default {
-  1: [data.A1],
-};
+
+const aoa = [];
+aoa[0] = [data.A1];
+
+export default aoa;

@@ -1,5 +1,8 @@
 import data from './data';
 
-export default {
-  2: [data.B2],
-};
+
+const aoa = [];
+aoa[1] = [];
+aoa[1][1] = data.B2;
+
+export default aoa;

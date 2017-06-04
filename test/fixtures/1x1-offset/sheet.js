@@ -9,7 +9,5 @@ export default {
   firstRow: 2,
   lastColumn: 2,
   lastRow: 2,
-  aoa: [
-    aoa[2],
-  ],
+  aoa,
 };

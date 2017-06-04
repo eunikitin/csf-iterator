@@ -95,9 +95,7 @@ describe('Sheet', () => {
       });
 
       it('should set aoa as array of arrays of sheet data', () => {
-        expect(sheet.aoa).to.deep.equal([
-          sheet1x1DataAoa[1],
-        ]);
+        expect(sheet.aoa).to.deep.equal(sheet1x1DataAoa);
       });
     });
 
@@ -131,10 +129,7 @@ describe('Sheet', () => {
       });
 
       it('should set aoa as array of arrays of sheet data', () => {
-        expect(sheet.aoa).to.deep.equal([
-          sheet2x2DataAoa[1],
-          sheet2x2DataAoa[2],
-        ]);
+        expect(sheet.aoa).to.deep.equal(sheet2x2DataAoa);
       });
     });
 
@@ -168,10 +163,7 @@ describe('Sheet', () => {
       });
 
       it('should set aoa as array of arrays of sheet data', () => {
-        expect(sheet.aoa).to.deep.equal([
-          sheet5x2DataAoa[1],
-          sheet5x2DataAoa[2],
-        ]);
+        expect(sheet.aoa).to.deep.equal(sheet5x2DataAoa);
       });
     });
 
@@ -205,10 +197,7 @@ describe('Sheet', () => {
       });
 
       it('should set aoa as array of arrays of sheet data', () => {
-        const aoa = [];
-        aoa[1] = [];
-        aoa[1][1] = sheet1x1OffsetDataAoa[2][0];
-        expect(sheet.aoa).to.deep.equal(aoa);
+        expect(sheet.aoa).to.deep.equal(sheet1x1OffsetDataAoa);
       });
     });
 
@@ -242,14 +231,7 @@ describe('Sheet', () => {
       });
 
       it('should set aoa as array of arrays of sheet data', () => {
-        const aoa = [];
-        aoa[2] = [];
-        aoa[3] = [];
-        aoa[2][2] = sheet2x2OffsetDataAoa[3][0];
-        aoa[2][3] = sheet2x2OffsetDataAoa[3][1];
-        aoa[3][2] = sheet2x2OffsetDataAoa[4][0];
-        aoa[3][3] = sheet2x2OffsetDataAoa[4][1];
-        expect(sheet.aoa).to.deep.equal(aoa);
+        expect(sheet.aoa).to.deep.equal(sheet2x2OffsetDataAoa);
       });
     });
   });

@@ -5,23 +5,23 @@ import Iterator from 'Src/iterator';
 
 import sheet1x1 from '../fixtures/1x1/data';
 import sheet1x1Object from '../fixtures/1x1/sheet';
-import sheet1x1Aoa from '../fixtures/1x1/data-aoa';
+import sheet1x1DataAoa from '../fixtures/1x1/data-aoa';
 
 import sheet2x2 from '../fixtures/2x2/data';
 import sheet2x2Object from '../fixtures/2x2/sheet';
-import sheet2x2Aoa from '../fixtures/2x2/data-aoa';
+import sheet2x2DataAoa from '../fixtures/2x2/data-aoa';
 
 import sheet1x1Offset from '../fixtures/1x1-offset/data';
 import sheet1x1OffsetObject from '../fixtures/1x1-offset/sheet';
-import sheet1x1OffsetAoa from '../fixtures/1x1-offset/data-aoa';
+import sheet1x1OffsetDataAoa from '../fixtures/1x1-offset/data-aoa';
 
 import sheet2x2Offset from '../fixtures/2x2-offset/data';
 import sheet2x2OffsetObject from '../fixtures/2x2-offset/sheet';
-import sheet2x2OffsetAoa from '../fixtures/2x2-offset/data-aoa';
+import sheet2x2OffsetDataAoa from '../fixtures/2x2-offset/data-aoa';
 
 import sheet5x2 from '../fixtures/5x2/data';
 import sheet5x2Object from '../fixtures/5x2/sheet';
-import sheet5x2Aoa from '../fixtures/5x2/data-aoa';
+import sheet5x2DataAoa from '../fixtures/5x2/data-aoa';
 
 
 describe('Sheet', () => {
@@ -96,7 +96,7 @@ describe('Sheet', () => {
 
       it('should set aoa as array of arrays of sheet data', () => {
         expect(sheet.aoa).to.deep.equal([
-          sheet1x1Aoa[1],
+          sheet1x1DataAoa[1],
         ]);
       });
     });
@@ -132,8 +132,8 @@ describe('Sheet', () => {
 
       it('should set aoa as array of arrays of sheet data', () => {
         expect(sheet.aoa).to.deep.equal([
-          sheet2x2Aoa[1],
-          sheet2x2Aoa[2],
+          sheet2x2DataAoa[1],
+          sheet2x2DataAoa[2],
         ]);
       });
     });
@@ -170,7 +170,7 @@ describe('Sheet', () => {
       it('should set aoa as array of arrays of sheet data', () => {
         const aoa = [];
         aoa[1] = [];
-        aoa[1][1] = sheet1x1OffsetAoa[2][0];
+        aoa[1][1] = sheet1x1OffsetDataAoa[2][0];
         expect(sheet.aoa).to.deep.equal(aoa);
       });
     });
@@ -208,10 +208,10 @@ describe('Sheet', () => {
         const aoa = [];
         aoa[2] = [];
         aoa[3] = [];
-        aoa[2][2] = sheet2x2OffsetAoa[3][0];
-        aoa[2][3] = sheet2x2OffsetAoa[3][1];
-        aoa[3][2] = sheet2x2OffsetAoa[4][0];
-        aoa[3][3] = sheet2x2OffsetAoa[4][1];
+        aoa[2][2] = sheet2x2OffsetDataAoa[3][0];
+        aoa[2][3] = sheet2x2OffsetDataAoa[3][1];
+        aoa[3][2] = sheet2x2OffsetDataAoa[4][0];
+        aoa[3][3] = sheet2x2OffsetDataAoa[4][1];
         expect(sheet.aoa).to.deep.equal(aoa);
       });
     });
@@ -247,8 +247,8 @@ describe('Sheet', () => {
 
       it('should set aoa as array of arrays of sheet data', () => {
         expect(sheet.aoa).to.deep.equal([
-          sheet5x2Aoa[1],
-          sheet5x2Aoa[2],
+          sheet5x2DataAoa[1],
+          sheet5x2DataAoa[2],
         ]);
       });
     });

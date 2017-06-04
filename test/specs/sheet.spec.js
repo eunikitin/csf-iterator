@@ -69,162 +69,152 @@ describe('Sheet', () => {
   });
 
   describe('calculateSheetProperties', () => {
+    beforeEach(() => {
+      sheet = new Sheet(sheet1x1);
+    });
+
     describe('1x1', () => {
       it('should calculate and set width property', () => {
-        sheet = new Sheet(sheet1x1);
         expect(sheet.width).to.equal(sheet1x1Object.width);
       });
 
       it('should calculate and set height property', () => {
-        sheet = new Sheet(sheet1x1);
         expect(sheet.height).to.equal(sheet1x1Object.height);
       });
 
       it('should set first column index', () => {
-        sheet = new Sheet(sheet1x1);
         expect(sheet.firstColumn).to.equal(sheet1x1Object.firstColumn);
       });
 
       it('should set first row index', () => {
-        sheet = new Sheet(sheet1x1);
         expect(sheet.firstRow).to.equal(sheet1x1Object.firstRow);
       });
 
       it('should set last column index', () => {
-        sheet = new Sheet(sheet1x1);
         expect(sheet.lastColumn).to.equal(sheet1x1Object.lastColumn);
       });
 
       it('should set last row index', () => {
-        sheet = new Sheet(sheet1x1);
         expect(sheet.lastRow).to.equal(sheet1x1Object.lastRow);
       });
     });
 
     describe('2x2', () => {
-      it('should calculate and set width property', () => {
+      beforeEach(() => {
         sheet = new Sheet(sheet2x2);
+      });
+
+      it('should calculate and set width property', () => {
         expect(sheet.width).to.equal(sheet2x2Object.width);
       });
 
       it('should calculate and set height property', () => {
-        sheet = new Sheet(sheet2x2);
         expect(sheet.height).to.equal(sheet2x2Object.height);
       });
 
       it('should set first column index', () => {
-        sheet = new Sheet(sheet2x2);
         expect(sheet.firstColumn).to.equal(sheet2x2Object.firstColumn);
       });
 
       it('should set first row index', () => {
-        sheet = new Sheet(sheet2x2);
         expect(sheet.firstRow).to.equal(sheet2x2Object.firstRow);
       });
 
       it('should set last column index', () => {
-        sheet = new Sheet(sheet2x2);
         expect(sheet.lastColumn).to.equal(sheet2x2Object.lastColumn);
       });
 
       it('should set last row index', () => {
-        sheet = new Sheet(sheet2x2);
         expect(sheet.lastRow).to.equal(sheet2x2Object.lastRow);
       });
     });
 
     describe('1x1 with offset', () => {
-      it('should calculate and set width property', () => {
+      beforeEach(() => {
         sheet = new Sheet(sheet1x1Offset);
+      });
+
+      it('should calculate and set width property', () => {
         expect(sheet.width).to.equal(sheet1x1OffsetObject.width);
       });
 
       it('should calculate and set height property', () => {
-        sheet = new Sheet(sheet1x1Offset);
         expect(sheet.height).to.equal(sheet1x1OffsetObject.height);
       });
 
       it('should set first column index', () => {
-        sheet = new Sheet(sheet1x1Offset);
         expect(sheet.firstColumn).to.equal(sheet1x1OffsetObject.firstColumn);
       });
 
       it('should set first row index', () => {
-        sheet = new Sheet(sheet1x1Offset);
         expect(sheet.firstRow).to.equal(sheet1x1OffsetObject.firstRow);
       });
 
       it('should set last column index', () => {
-        sheet = new Sheet(sheet1x1Offset);
         expect(sheet.lastColumn).to.equal(sheet1x1OffsetObject.lastColumn);
       });
 
       it('should set last row index', () => {
-        sheet = new Sheet(sheet1x1Offset);
         expect(sheet.lastRow).to.equal(sheet1x1OffsetObject.lastRow);
       });
     });
 
     describe('2x2 with offset', () => {
-      it('should calculate and set width property', () => {
+      beforeEach(() => {
         sheet = new Sheet(sheet2x2Offset);
+      });
+
+      it('should calculate and set width property', () => {
         expect(sheet.width).to.equal(sheet2x2OffsetObject.width);
       });
 
       it('should calculate and set height property', () => {
-        sheet = new Sheet(sheet2x2Offset);
         expect(sheet.height).to.equal(sheet2x2OffsetObject.height);
       });
 
       it('should set first column index', () => {
-        sheet = new Sheet(sheet2x2Offset);
         expect(sheet.firstColumn).to.equal(sheet2x2OffsetObject.firstColumn);
       });
 
       it('should set first row index', () => {
-        sheet = new Sheet(sheet2x2Offset);
         expect(sheet.firstRow).to.equal(sheet2x2OffsetObject.firstRow);
       });
 
       it('should set last column index', () => {
-        sheet = new Sheet(sheet2x2Offset);
         expect(sheet.lastColumn).to.equal(sheet2x2OffsetObject.lastColumn);
       });
 
       it('should set last row index', () => {
-        sheet = new Sheet(sheet2x2Offset);
         expect(sheet.lastRow).to.equal(sheet2x2OffsetObject.lastRow);
       });
     });
 
     describe('5x2', () => {
-      it('should calculate and set width property', () => {
+      beforeEach(() => {
         sheet = new Sheet(sheet5x2);
+      });
+
+      it('should calculate and set width property', () => {
         expect(sheet.width).to.equal(sheet5x2Object.width);
       });
 
       it('should calculate and set height property', () => {
-        sheet = new Sheet(sheet5x2);
         expect(sheet.height).to.equal(sheet5x2Object.height);
       });
 
       it('should set first column index', () => {
-        sheet = new Sheet(sheet5x2);
         expect(sheet.firstColumn).to.equal(sheet5x2Object.firstColumn);
       });
 
       it('should set first row index', () => {
-        sheet = new Sheet(sheet5x2);
         expect(sheet.firstRow).to.equal(sheet5x2Object.firstRow);
       });
 
       it('should set last column index', () => {
-        sheet = new Sheet(sheet5x2);
         expect(sheet.lastColumn).to.equal(sheet5x2Object.lastColumn);
       });
 
       it('should set last row index', () => {
-        sheet = new Sheet(sheet5x2);
         expect(sheet.lastRow).to.equal(sheet5x2Object.lastRow);
       });
     });

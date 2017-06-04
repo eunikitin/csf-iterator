@@ -1,5 +1,3 @@
-import utils from 'csf-utils';
-
 
 export default class Iterator {
   constructor(sheet) {

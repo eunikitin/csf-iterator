@@ -1,4 +1,5 @@
-import { expect } from 'chai';
+import { assert, expect } from 'chai';
+import sinon from 'sinon';
 
 import Sheet from 'Src/sheet';
 import Iterator from 'Src/iterator';
@@ -46,6 +47,12 @@ describe('Sheet', () => {
     const name = 'defaultName';
     sheet = new Sheet(sheet1x1, name);
     expect(sheet.name).to.equal(name);
+  });
+
+  it('should call this.calculateSheetProperties on initialization', () => {
+    const calculateSheetProperties = sinon.spy(Sheet.prototype, 'calculateSheetProperties');
+    sheet = new Sheet(sheet1x1);
+    assert(calculateSheetProperties.called);
   });
 
   it('should throw an Error if data property was not given to constructor', () => {

@@ -10,8 +10,10 @@ export default class Sheet {
     this.aoa = null;
     this.name = name;
 
-    this.width = null;
-    this.height = null;
+    this.content = {
+      width: null,
+      height: null,
+    };
 
     this.first = {
       column: null,
@@ -40,8 +42,8 @@ export default class Sheet {
       this.last.column = lastCell.column;
       this.last.row = lastCell.row;
 
-      this.width = (this.last.column - this.first.column) + 1;
-      this.height = (this.last.row - this.first.row) + 1;
+      this.content.width = (this.last.column - this.first.column) + 1;
+      this.content.height = (this.last.row - this.first.row) + 1;
     }
   }
 

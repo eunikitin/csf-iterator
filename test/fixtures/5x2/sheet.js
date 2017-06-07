@@ -3,8 +3,10 @@ import aoa from './data-aoa';
 
 export default {
   data,
-  width: 5,
-  height: 2,
+  content: {
+    width: 5,
+    height: 2,
+  },
   first: {
     column: 1,
     row: 1,

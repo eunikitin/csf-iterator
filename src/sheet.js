@@ -10,6 +10,11 @@ export default class Sheet {
     this.aoa = null;
     this.name = name;
 
+    this.sheet = {
+      width: null,
+      height: null,
+    };
+
     this.content = {
       width: null,
       height: null,
@@ -44,6 +49,9 @@ export default class Sheet {
 
       this.content.width = (this.last.column - this.first.column) + 1;
       this.content.height = (this.last.row - this.first.row) + 1;
+
+      this.sheet.width = this.last.column;
+      this.sheet.height = this.last.row;
     }
   }
 

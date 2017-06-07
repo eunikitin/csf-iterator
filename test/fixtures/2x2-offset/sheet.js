@@ -3,6 +3,10 @@ import aoa from './data-aoa';
 
 export default {
   data,
+  sheet: {
+    width: 4,
+    height: 4,
+  },
   content: {
     width: 2,
     height: 2,

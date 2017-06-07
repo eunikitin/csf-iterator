@@ -85,6 +85,14 @@ describe('Sheet', () => {
         expect(sheet.content.height).to.equal(sheet1x1Object.content.height);
       });
 
+      it('should calculate and set sheet width property', () => {
+        expect(sheet.sheet.width).to.equal(sheet1x1Object.sheet.width);
+      });
+
+      it('should calculate and set sheet height property', () => {
+        expect(sheet.sheet.height).to.equal(sheet1x1Object.sheet.height);
+      });
+
       it('should set first column index', () => {
         expect(sheet.first.column).to.equal(sheet1x1Object.first.column);
       });
@@ -117,6 +125,14 @@ describe('Sheet', () => {
 
       it('should calculate and set content height property', () => {
         expect(sheet.content.height).to.equal(sheet2x2Object.content.height);
+      });
+
+      it('should calculate and set sheet width property', () => {
+        expect(sheet.sheet.width).to.equal(sheet2x2Object.sheet.width);
+      });
+
+      it('should calculate and set sheet height property', () => {
+        expect(sheet.sheet.height).to.equal(sheet2x2Object.sheet.height);
       });
 
       it('should set first column index', () => {
@@ -153,6 +169,14 @@ describe('Sheet', () => {
         expect(sheet.content.height).to.equal(sheet5x2Object.content.height);
       });
 
+      it('should calculate and set sheet width property', () => {
+        expect(sheet.sheet.width).to.equal(sheet5x2Object.sheet.width);
+      });
+
+      it('should calculate and set sheet height property', () => {
+        expect(sheet.sheet.height).to.equal(sheet5x2Object.sheet.height);
+      });
+
       it('should set first column index', () => {
         expect(sheet.first.column).to.equal(sheet5x2Object.first.column);
       });
@@ -187,6 +211,14 @@ describe('Sheet', () => {
         expect(sheet.content.height).to.equal(sheet1x1OffsetObject.content.height);
       });
 
+      it('should calculate and set sheet width property', () => {
+        expect(sheet.sheet.width).to.equal(sheet1x1OffsetObject.sheet.width);
+      });
+
+      it('should calculate and set sheet height property', () => {
+        expect(sheet.sheet.height).to.equal(sheet1x1OffsetObject.sheet.height);
+      });
+
       it('should set first column index', () => {
         expect(sheet.first.column).to.equal(sheet1x1OffsetObject.first.column);
       });
@@ -212,13 +244,20 @@ describe('Sheet', () => {
       beforeEach(() => {
         sheet = new Sheet(sheet2x2Offset);
       });
-
       it('should calculate and set content width property', () => {
         expect(sheet.content.width).to.equal(sheet2x2OffsetObject.content.width);
       });
 
       it('should calculate and set content height property', () => {
         expect(sheet.content.height).to.equal(sheet2x2OffsetObject.content.height);
+      });
+
+      it('should calculate and set sheet width property', () => {
+        expect(sheet.sheet.width).to.equal(sheet2x2OffsetObject.sheet.width);
+      });
+
+      it('should calculate and set sheet height property', () => {
+        expect(sheet.sheet.height).to.equal(sheet2x2OffsetObject.sheet.height);
       });
 
       it('should set first column index', () => {

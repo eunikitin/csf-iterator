@@ -2,7 +2,7 @@
 export default class Iterator {
   constructor(sheet) {
     this.sheet = sheet;
-    this.position = sheet.firstRow;
+    this.position = sheet.first.row;
   }
 
   static selectColumns(columns) {

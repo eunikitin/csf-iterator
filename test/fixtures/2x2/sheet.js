@@ -5,9 +5,13 @@ export default {
   data,
   width: 2,
   height: 2,
-  firstColumn: 1,
-  firstRow: 1,
-  lastColumn: 2,
-  lastRow: 2,
+  first: {
+    column: 1,
+    row: 1,
+  },
+  last: {
+    column: 2,
+    row: 2,
+  },
   aoa,
 };

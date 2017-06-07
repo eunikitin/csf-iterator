@@ -86,19 +86,19 @@ describe('Sheet', () => {
       });
 
       it('should set first column index', () => {
-        expect(sheet.firstColumn).to.equal(sheet1x1Object.firstColumn);
+        expect(sheet.first.column).to.equal(sheet1x1Object.first.column);
       });
 
       it('should set first row index', () => {
-        expect(sheet.firstRow).to.equal(sheet1x1Object.firstRow);
+        expect(sheet.first.row).to.equal(sheet1x1Object.first.row);
       });
 
       it('should set last column index', () => {
-        expect(sheet.lastColumn).to.equal(sheet1x1Object.lastColumn);
+        expect(sheet.last.column).to.equal(sheet1x1Object.last.column);
       });
 
       it('should set last row index', () => {
-        expect(sheet.lastRow).to.equal(sheet1x1Object.lastRow);
+        expect(sheet.last.row).to.equal(sheet1x1Object.last.row);
       });
 
       it('should set aoa as array of arrays of sheet data', () => {
@@ -120,19 +120,19 @@ describe('Sheet', () => {
       });
 
       it('should set first column index', () => {
-        expect(sheet.firstColumn).to.equal(sheet2x2Object.firstColumn);
+        expect(sheet.first.column).to.equal(sheet2x2Object.first.column);
       });
 
       it('should set first row index', () => {
-        expect(sheet.firstRow).to.equal(sheet2x2Object.firstRow);
+        expect(sheet.first.row).to.equal(sheet2x2Object.first.row);
       });
 
       it('should set last column index', () => {
-        expect(sheet.lastColumn).to.equal(sheet2x2Object.lastColumn);
+        expect(sheet.last.column).to.equal(sheet2x2Object.last.column);
       });
 
       it('should set last row index', () => {
-        expect(sheet.lastRow).to.equal(sheet2x2Object.lastRow);
+        expect(sheet.last.row).to.equal(sheet2x2Object.last.row);
       });
 
       it('should set aoa as array of arrays of sheet data', () => {
@@ -154,11 +154,11 @@ describe('Sheet', () => {
       });
 
       it('should set first column index', () => {
-        expect(sheet.firstColumn).to.equal(sheet5x2Object.firstColumn);
+        expect(sheet.first.column).to.equal(sheet5x2Object.first.column);
       });
 
       it('should set first row index', () => {
-        expect(sheet.firstRow).to.equal(sheet5x2Object.firstRow);
+        expect(sheet.first.row).to.equal(sheet5x2Object.first.row);
       });
 
       it('should set last column index', () => {
@@ -166,7 +166,7 @@ describe('Sheet', () => {
       });
 
       it('should set last row index', () => {
-        expect(sheet.lastRow).to.equal(sheet5x2Object.lastRow);
+        expect(sheet.last.row).to.equal(sheet5x2Object.last.row);
       });
 
       it('should set aoa as array of arrays of sheet data', () => {
@@ -188,11 +188,11 @@ describe('Sheet', () => {
       });
 
       it('should set first column index', () => {
-        expect(sheet.firstColumn).to.equal(sheet1x1OffsetObject.firstColumn);
+        expect(sheet.first.column).to.equal(sheet1x1OffsetObject.first.column);
       });
 
       it('should set first row index', () => {
-        expect(sheet.firstRow).to.equal(sheet1x1OffsetObject.firstRow);
+        expect(sheet.first.row).to.equal(sheet1x1OffsetObject.first.row);
       });
 
       it('should set last column index', () => {
@@ -200,7 +200,7 @@ describe('Sheet', () => {
       });
 
       it('should set last row index', () => {
-        expect(sheet.lastRow).to.equal(sheet1x1OffsetObject.lastRow);
+        expect(sheet.last.row).to.equal(sheet1x1OffsetObject.last.row);
       });
 
       it('should set aoa as array of arrays of sheet data', () => {
@@ -222,19 +222,19 @@ describe('Sheet', () => {
       });
 
       it('should set first column index', () => {
-        expect(sheet.firstColumn).to.equal(sheet2x2OffsetObject.firstColumn);
+        expect(sheet.first.column).to.equal(sheet2x2OffsetObject.first.column);
       });
 
       it('should set first row index', () => {
-        expect(sheet.firstRow).to.equal(sheet2x2OffsetObject.firstRow);
+        expect(sheet.first.row).to.equal(sheet2x2OffsetObject.first.row);
       });
 
       it('should set last column index', () => {
-        expect(sheet.lastColumn).to.equal(sheet2x2OffsetObject.lastColumn);
+        expect(sheet.last.column).to.equal(sheet2x2OffsetObject.last.column);
       });
 
       it('should set last row index', () => {
-        expect(sheet.lastRow).to.equal(sheet2x2OffsetObject.lastRow);
+        expect(sheet.last.row).to.equal(sheet2x2OffsetObject.last.row);
       });
 
       it('should set aoa as array of arrays of sheet data', () => {

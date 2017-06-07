@@ -12,10 +12,16 @@ export default class Sheet {
 
     this.width = null;
     this.height = null;
-    this.firstColumn = null;
-    this.firstRow = null;
-    this.lastColumn = null;
-    this.lastRow = null;
+
+    this.first = {
+      column: null,
+      row: null,
+    };
+
+    this.last = {
+      column: null,
+      row: null,
+    };
 
     this.calculateSheetProperties();
   }
@@ -28,14 +34,14 @@ export default class Sheet {
       const firstCell = utils.parseCell(split[0]);
       const lastCell = split[1] ? utils.parseCell(split[1]) : firstCell;
 
-      this.firstColumn = firstCell.column;
-      this.firstRow = firstCell.row;
+      this.first.column = firstCell.column;
+      this.first.row = firstCell.row;
 
-      this.lastColumn = lastCell.column;
-      this.lastRow = lastCell.row;
+      this.last.column = lastCell.column;
+      this.last.row = lastCell.row;
 
-      this.width = (this.lastColumn - this.firstColumn) + 1;
-      this.height = (this.lastRow - this.firstRow) + 1;
+      this.width = (this.last.column - this.first.column) + 1;
+      this.height = (this.last.row - this.first.row) + 1;
     }
   }
 

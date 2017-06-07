@@ -15,7 +15,7 @@ describe('Iterator', () => {
 
   it('should set position property on initialization as first row index', () => {
     iterator = new Iterator(sheet1x1Object);
-    expect(iterator.position).to.equal(sheet1x1Object.firstRow);
+    expect(iterator.position).to.equal(sheet1x1Object.first.row);
   });
 
   describe('selectColumns', () => {

@@ -13,9 +13,12 @@ describe('Iterator', () => {
     expect(iterator.sheet).to.equal(sheet1x1Object);
   });
 
-  it('should set position property on initialization as first row index', () => {
+  it('should set position property on initialization as first column and row indices', () => {
     iterator = new Iterator(sheet1x1Object);
-    expect(iterator.position).to.equal(sheet1x1Object.first.row);
+    expect(iterator.position).to.deep.equal({
+      column: sheet1x1Object.first.column,
+      row: sheet1x1Object.first.row,
+    });
   });
 
   describe('selectColumns', () => {

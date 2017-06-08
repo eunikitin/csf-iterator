@@ -4,25 +4,25 @@ import sinon from 'sinon';
 import Sheet from 'Src/sheet';
 import Iterator from 'Src/iterator';
 
-import sheet1x1 from '../fixtures/1x1/data';
-import sheet1x1Object from '../fixtures/1x1/sheet';
-import sheet1x1DataAoa from '../fixtures/1x1/data-aoa';
+import sheet1x1 from '../fixtures/sheet/1x1/data';
+import sheet1x1Object from '../fixtures/sheet/1x1/sheet';
+import sheet1x1DataAoa from '../fixtures/sheet/1x1/data-aoa';
 
-import sheet2x2 from '../fixtures/2x2/data';
-import sheet2x2Object from '../fixtures/2x2/sheet';
-import sheet2x2DataAoa from '../fixtures/2x2/data-aoa';
+import sheet2x2 from '../fixtures/sheet/2x2/data';
+import sheet2x2Object from '../fixtures/sheet/2x2/sheet';
+import sheet2x2DataAoa from '../fixtures/sheet/2x2/data-aoa';
 
-import sheet1x1Offset from '../fixtures/1x1-offset/data';
-import sheet1x1OffsetObject from '../fixtures/1x1-offset/sheet';
-import sheet1x1OffsetDataAoa from '../fixtures/1x1-offset/data-aoa';
+import sheet1x1Offset from '../fixtures/sheet/1x1-offset/data';
+import sheet1x1OffsetObject from '../fixtures/sheet/1x1-offset/sheet';
+import sheet1x1OffsetDataAoa from '../fixtures/sheet/1x1-offset/data-aoa';
 
-import sheet2x2Offset from '../fixtures/2x2-offset/data';
-import sheet2x2OffsetObject from '../fixtures/2x2-offset/sheet';
-import sheet2x2OffsetDataAoa from '../fixtures/2x2-offset/data-aoa';
+import sheet2x2Offset from '../fixtures/sheet/2x2-offset/data';
+import sheet2x2OffsetObject from '../fixtures/sheet/2x2-offset/sheet';
+import sheet2x2OffsetDataAoa from '../fixtures/sheet/2x2-offset/data-aoa';
 
-import sheet5x2 from '../fixtures/5x2/data';
-import sheet5x2Object from '../fixtures/5x2/sheet';
-import sheet5x2DataAoa from '../fixtures/5x2/data-aoa';
+import sheet5x2 from '../fixtures/sheet/5x2/data';
+import sheet5x2Object from '../fixtures/sheet/5x2/sheet';
+import sheet5x2DataAoa from '../fixtures/sheet/5x2/data-aoa';
 
 
 describe('Sheet', () => {

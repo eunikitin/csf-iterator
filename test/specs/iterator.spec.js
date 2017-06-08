@@ -2,7 +2,7 @@ import { expect } from 'chai';
 
 import Iterator from 'Src/iterator';
 
-import sheet1x1Object from '../fixtures/1x1/sheet';
+import sheet1x1Object from '../fixtures/sheet/1x1/sheet';
 
 
 describe('Iterator', () => {

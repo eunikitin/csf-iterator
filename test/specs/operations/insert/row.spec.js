@@ -3,14 +3,14 @@ import sinon from 'sinon';
 
 import insert from 'Src/operations/insert';
 
-import iteratorObject from '../../../fixtures/iterator/5x2';
+import { sheet5x2Object } from '../../../fixtures/iterator/5x2';
 
 let iterator;
 let bound;
 let calculateSheetPropertiesSpy;
 
 beforeEach(() => {
-  iterator = iteratorObject();
+  iterator = sheet5x2Object();
   iterator.sheet.calculateSheetProperties = function calculateSheetProperties() {};
   calculateSheetPropertiesSpy = sinon.spy(iterator.sheet, 'calculateSheetProperties');
   bound = insert.row.bind(iterator);

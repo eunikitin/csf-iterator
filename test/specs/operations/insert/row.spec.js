@@ -1,7 +1,7 @@
 import { assert, expect } from 'chai';
 import sinon from 'sinon';
 
-import insert from '../../../../src/operations/insert';
+import insert from 'Src/operations/insert';
 
 import iteratorObject from '../../../fixtures/iterator/5x2';
 

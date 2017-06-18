@@ -9,15 +9,15 @@ describe('Iterator', () => {
   let iterator;
 
   it('should set sheet property on initialization', () => {
-    iterator = new Iterator(sheet1x1Object);
-    expect(iterator.sheet).to.equal(sheet1x1Object);
+    iterator = new Iterator(sheet1x1Object());
+    expect(iterator.sheet).to.deep.equal(sheet1x1Object());
   });
 
   it('should set position property on initialization as first column and row indices', () => {
-    iterator = new Iterator(sheet1x1Object);
+    iterator = new Iterator(sheet1x1Object());
     expect(iterator.position).to.deep.equal({
-      column: sheet1x1Object.first.column,
-      row: sheet1x1Object.first.row,
+      column: sheet1x1Object().first.column,
+      row: sheet1x1Object().first.row,
     });
   });
 

@@ -1,7 +1,10 @@
 import data from './data';
 
 
-const aoa = [];
-aoa[0] = [data.A1];
+export default () => {
+  const aoa = [];
 
-export default aoa;
+  aoa[0] = [data().A1];
+
+  return aoa;
+};

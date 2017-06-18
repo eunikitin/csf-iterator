@@ -1,4 +1,5 @@
-export default {
+
+export default () => ({
   A1: { t: 's', v: 'A1 Data' },
   B1: { t: 's', v: 'B1 Data' },
   C1: { t: 's', v: 'C1 Data' },
@@ -10,4 +11,4 @@ export default {
   D2: { t: 's', v: 'D2 Data' },
   E2: { t: 's', v: 'E2 Data' },
   '!ref': 'A1:E2',
-};
+});

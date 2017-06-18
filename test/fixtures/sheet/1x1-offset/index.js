@@ -1,7 +1,4 @@
-import data from './data';
-import object from './sheet';
 
-export default {
-  data,
-  object,
-};
+export sheet1x1Offset from './data';
+export sheet1x1OffsetObject from './sheet';
+export sheet1x1OffsetDataAoa from './data-aoa';
